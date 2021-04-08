@@ -1,0 +1,22 @@
+
+<div class="container">
+  <form action="/answer">
+    <input type="text" name="question">
+    <input type="submit" value="Ask!">
+  </form>
+
+  <br>
+
+  <h1>Stupid coach</h1>
+
+  <h3>Question : <%=@question%></h3>
+  <p><i>- You</i></p>
+  <br>
+
+  <h3>Answer : <%=@answer%></h3>
+  <p><i>- Your coach</i></p>
+
+  <br>
+  <%= link_to "Ask a new question", ask_path %>
+
+</div>
